@@ -61,6 +61,7 @@ export const RightRodape = styled.div`
         justify-content: center;
         align-items: center;
         border-radius: 5px;
+        color: black;
 
         & > p {
             font-family: 'Open Sans', sans-serif;

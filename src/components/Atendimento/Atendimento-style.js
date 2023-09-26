@@ -100,6 +100,10 @@ export const InforContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
 
+    & > a {
+        color: black;
+    }
+
     & > p {
         color: #fff;
         font-family: 'Open Sans', sans-serif;
