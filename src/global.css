@@ -1,0 +1,12 @@
+/* global.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D1FFDB;
+  display: flex;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
