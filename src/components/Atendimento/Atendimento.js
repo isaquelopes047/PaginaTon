@@ -10,23 +10,23 @@ export default function Atendimento(){
         <ContainerMainAtendimento>
             <ContainerText>
                 <div>
-                    <h1>Atendimento com um consultor</h1>
-                    <h3>Esta em duvida de qual plano se encaixa melhor a você? nosso atendimento pode te ajudar em:</h3>
+                    <h1>Atendimento com um parceiro oficial Ton?</h1>
+                    <h3>Está em dúvida de qual plano se encaixa melhor a você? Nosso atendimento pode te ajudar em:</h3>
                 </div>
 
                 <InforContainer>
                     <AiOutlineCaretRight color='#27CE24' size={30}/>
-                    <p>Ajuda em escolher a melhor maquininha para seu negocio</p>
+                    <p>Ajuda em escolher a melhor maquininha para seu negócio.</p>
                 </InforContainer>
 
                 <InforContainer className='nt3'>
                     <AiOutlineCaretRight color='#27CE24' size={30}/>
-                    <p>Tirar suas duvidas</p>
+                    <p>Tirar suas dúvidas.</p>
                 </InforContainer>
 
                 <InforContainer>
                     <AiOutlineCaretRight color='#27CE24' size={30}/>
-                    <p>Mostrar que a Ton é a melhor escolhar :D</p>
+                    <p>Mostrar que a Ton é a melhor escolha :D</p>
                 </InforContainer>
 
                 <InforContainer>

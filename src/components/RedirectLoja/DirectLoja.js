@@ -12,7 +12,7 @@ export default function DirectLoja(){
             <RirectLojaRight>
                 <div>
                     <h1>Você já conhece a Ton e quer ir direto a loja?</h1>
-                    <h2>Clicando no link a baixo você será direcionado diretamente a loja e podera fazer a compra da sua maquininha com 5% de desconto agora mesmo!</h2>
+                    <h2>Clicando no link a baixo você será direcionado diretamente a loja e poderá fazer a compra da sua maquininha com 5% de desconto agora mesmo!</h2>
                 </div>
 
                 <div>
