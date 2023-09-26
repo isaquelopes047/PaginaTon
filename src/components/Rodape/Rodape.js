@@ -11,7 +11,7 @@ export default function Rodape(){
             </LeftRodape>
             <RightRodape>
                 <p>produtoston@gmail.com</p>
-                <p>(47) 99907-8865</p>
+                <p>(47)99907-8865</p>
                 <a href={dados.linkWhats}>
                     <p> Click aqui </p>
                 </a>
