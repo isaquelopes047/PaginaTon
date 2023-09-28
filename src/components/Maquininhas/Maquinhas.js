@@ -18,7 +18,13 @@ export default function Maquininhas(){
             valorNovo: "R$ 101,46",
             valorEmVezes: "8,46",
             nomeMaquininhaBotao: "T1 promo",
-            linkCompra: dados.LinkCompraT1Promo
+            linkCompra: dados.LinkCompraT1Promo,
+            beneficio: {
+                beneficio1: 'Receba sua venda em um dia util',
+                beneficio2: 'Frete e troca grátis para todo o Brasil',
+                beneficio3: 'Recebe por aproximação (NFC)',
+                beneficio4: 'Comprovante por SMS',
+            }
         },
         {
             imgMaquininha: t1chippromo,
@@ -27,7 +33,14 @@ export default function Maquininhas(){
             valorNovo: "R$ 272,46",
             valorEmVezes: "22,70",
             nomeMaquininhaBotao: "T1 Chip promo",
-            linkCompra: dados.LinkCompraT1ChiPromo
+            linkCompra: dados.LinkCompraT1ChiPromo,
+            beneficio: {
+                beneficio1: 'Receba sua venda em um dia util',
+                beneficio2: 'Frete e troca grátis para todo o Brasil',
+                beneficio3: 'Recebe por aproximação (NFC)',
+                beneficio4: 'Comprovante por SMS',
+                beneficio5: 'Com chip 2G e WI-FI',
+            }
         },
         {
             imgMaquininha: t2promo,
@@ -36,7 +49,15 @@ export default function Maquininhas(){
             valorNovo: "R$ 181,26",
             valorEmVezes: "15,10",
             nomeMaquininhaBotao: "T2 + Promo",
-            linkCompra: dados.LinkCompraT2Promo
+            linkCompra: dados.LinkCompraT2Promo,
+            beneficio: {
+                beneficio1: 'Receba sua venda em um dia util',
+                beneficio2: 'Frete e troca grátis para todo o Brasil',
+                beneficio3: 'Recebe por aproximação (NFC)',
+                beneficio4: 'Comprovante por SMS',
+                beneficio5: 'Com chip 2G e WI-FI',
+                beneficio6: 'Bateria de longa duração',
+            }
         },
         {
             imgMaquininha: t3,
@@ -45,7 +66,17 @@ export default function Maquininhas(){
             valorNovo: "R$ 375,06",
             valorEmVezes: "31,25",
             nomeMaquininhaBotao: "T3 Promo",
-            linkCompra: dados.LinkCompraT3Promo
+            linkCompra: dados.LinkCompraT3Promo,
+            beneficio: {
+                beneficio1: 'Receba sua venda em um dia util',
+                beneficio2: 'Frete e troca grátis para todo o Brasil',
+                beneficio3: 'Recebe por aproximação (NFC)',
+                beneficio4: 'Comprovante por SMS',
+                beneficio5: 'Com chip 2G e WI-FI',
+                beneficio6: 'Comprovante impresso ou SMS',
+                beneficio7: 'Aceita Pix e QR Code na Maquininha',
+                beneficio8: 'Recebe por aproximação (NFC)',
+            }
         },
         {
             imgMaquininha: t3smarth,
@@ -54,7 +85,18 @@ export default function Maquininhas(){
             valorNovo: "R$ 454,86",
             valorEmVezes: "37,97",
             nomeMaquininhaBotao: "T3 Smart",
-            linkCompra: dados.LinkCompraT3SmartPromo
+            linkCompra: dados.LinkCompraT3SmartPromo,
+            beneficio: {
+                beneficio1: 'Receba sua venda em um dia util',
+                beneficio2: 'Frete e troca grátis para todo o Brasil',
+                beneficio3: 'Recebe por aproximação (NFC)',
+                beneficio4: 'Comprovante por SMS',
+                beneficio5: 'Com chip 2G e WI-FI',
+                beneficio6: 'Comprovante impresso ou SMS',
+                beneficio7: 'Aceita Pix e QR Code na Maquininha',
+                beneficio8: 'Recebe por aproximação (NFC)',
+                beneficio9: 'Sistema Android com Visor T',
+            }
         },
     ];
 
@@ -68,8 +110,10 @@ export default function Maquininhas(){
                 valorNovo={produto.valorNovo}
                 valorEmVezes={produto.valorEmVezes}
                 nomeMaquininhaBotao={produto.nomeMaquininhaBotao}
-                linkCompra={produto.linkCompra}
-            />
+                linkCompra={produto.linkCompra} 
+                beneficio={produto.beneficio}>
+
+             </Produto>
         ));
     }
 

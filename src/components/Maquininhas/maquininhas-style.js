@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerMainMaquininhas = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 
@@ -29,13 +29,15 @@ export const TitleMaquininha = styled.div`
 `
 export const ContainerMaquininhas = styled.div`
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: 90vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
 
-    @media (max-width: 930px) {
+    @media (max-width: 950px) {
         flex-direction: column;
         height: auto;
     } 

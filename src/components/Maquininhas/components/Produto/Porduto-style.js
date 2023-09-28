@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const MainProduto = styled.div`
-    width: 14vw;
-    height: 65vh;
+    width: 300px;
+    height: 710px;
+    padding-bottom: 15px;
     background-color: #fff;
     margin: 30px;
     border-radius: 15px;
@@ -17,6 +18,10 @@ export const MainProduto = styled.div`
         & > img {
             margin-top: -60px;
             width: 150px;
+
+            @media (max-width: 1393px) {
+                width: 120px;
+            } 
         }
     }
 
@@ -126,4 +131,12 @@ export const InfoCard = styled.div`
             }
         }
     }
+`
+
+export const Beneficios = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 `

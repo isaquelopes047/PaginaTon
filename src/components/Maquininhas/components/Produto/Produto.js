@@ -1,8 +1,30 @@
-import { MainProduto, ContanierValores, InfoCard } from './Porduto-style'
+import Beneficio from '../Beneficio/Beneficio';
+import { MainProduto, ContanierValores, InfoCard } from './Porduto-style';
 
-export default function Produto({imgMaquininha, nomeMaquininha, valorAntigo, valorNovo, valorEmVezes, nomeMaquininhaBotao, linkCompra}){
+import { BsTruck } from 'react-icons/bs';
+import { GrMoney } from 'react-icons/gr';
+import { FaWifi } from 'react-icons/fa';
+import { BsBoxArrowInUpLeft, BsQrCodeScan, BsAndroid } from 'react-icons/bs';
+import { BiMicrochip } from 'react-icons/bi';
+import { TbGenderNeutrois } from 'react-icons/tb';
+import { MdOutlineWifiTethering } from 'react-icons/md';
 
+export default function Produto({ beneficio, ...outrasProps }){
+
+    const { imgMaquininha, nomeMaquininha, valorAntigo, valorNovo, valorEmVezes, nomeMaquininhaBotao, linkCompra } = outrasProps;
     const [reais, centavos] = valorEmVezes.split(',');
+
+    const icones = [
+        <GrMoney />, 
+        <BsTruck />, 
+        <FaWifi />, 
+        <BsBoxArrowInUpLeft />, 
+        <BiMicrochip />, 
+        <TbGenderNeutrois />, 
+        <BsQrCodeScan />, 
+        <MdOutlineWifiTethering />, 
+        <BsAndroid />
+    ];
 
     return (
         <MainProduto>
@@ -35,6 +57,11 @@ export default function Produto({imgMaquininha, nomeMaquininha, valorAntigo, val
                     <button>Pedir agora {nomeMaquininhaBotao}</button>
                 </a>
             </InfoCard>
+
+            {beneficio && Object.keys(beneficio).map((chave, index) => (
+                <Beneficio key={index} icon1={icones[index]} beneficio1={beneficio[chave]} />
+            ))}
+
         </MainProduto>
     )
 }
