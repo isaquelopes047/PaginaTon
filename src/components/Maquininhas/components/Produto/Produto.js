@@ -1,6 +1,6 @@
 import { MainProduto, ContanierValores, InfoCard } from './Porduto-style'
 
-export default function Produto({imgMaquininha, nomeMaquininha, valorAntigo, valorNovo, valorEmVezes}){
+export default function Produto({imgMaquininha, nomeMaquininha, valorAntigo, valorNovo, valorEmVezes, nomeMaquininhaBotao, linkCompra}){
 
     const [reais, centavos] = valorEmVezes.split(',');
 
@@ -31,6 +31,9 @@ export default function Produto({imgMaquininha, nomeMaquininha, valorAntigo, val
 
             <InfoCard>
                 <p>Receba <strong>100% de cachback</strong> da sua 1° maquininha ao atingir R$ 10 mil em vendas</p>
+                <a href={linkCompra}>
+                    <button>Pedir agora {nomeMaquininhaBotao}</button>
+                </a>
             </InfoCard>
         </MainProduto>
     )

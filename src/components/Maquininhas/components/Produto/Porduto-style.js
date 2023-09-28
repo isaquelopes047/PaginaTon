@@ -78,6 +78,7 @@ export const ContanierValores = styled.div`
             color: black;
             text-align: end;
             margin-bottom: 5px;
+            font-size: 13px;
         }
 
         & > p:nth-child(2){
@@ -104,5 +105,25 @@ export const InfoCard = styled.div`
         font-family: 'Lato', sans-serif;
         margin: 10px;
         font-size: 13px;
+    }
+
+    & > a {
+
+        width: 100%;
+
+        & > button{
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: #0FC321;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #175B1E;
+                transition: 0.3s;
+            }
+        }
     }
 `
