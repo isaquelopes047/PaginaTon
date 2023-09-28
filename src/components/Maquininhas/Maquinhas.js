@@ -111,9 +111,7 @@ export default function Maquininhas(){
                 valorEmVezes={produto.valorEmVezes}
                 nomeMaquininhaBotao={produto.nomeMaquininhaBotao}
                 linkCompra={produto.linkCompra} 
-                beneficio={produto.beneficio}>
-
-             </Produto>
+                beneficio={produto.beneficio}/>
         ));
     }
 
